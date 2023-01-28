@@ -1,7 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Krub:wght@300;400;500&family=Lora:ital,wght@1,400;1,500;1,600&family=Poppins:wght@100;200;300;400;500;600&family=Ubuntu:ital,wght@1,300;1,400&family=Varela+Round&display=swap');
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* background-color: paleturquoise; */
-    /* color: aqua; */
 }
 
 input {
@@ -21,9 +20,9 @@ input {
     background-color: blueviolet;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 15px 25px;
     align-items: center;
-    border-bottom: 5px solid gray;
+    border-bottom: 1px solid #f1f3f4;
 }
 
 .brand {
@@ -83,7 +82,7 @@ h4 {
     align-items: center;
     padding: 10px 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px #edf0f1;
+    box-shadow: 2px 3px 4px 2px #edf0f1;
 }
 
 .mobile-search {
@@ -216,8 +215,9 @@ h4 {
 #note {
     height: fit-content;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #e3e8eb;
     border-radius: 10px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .text {
@@ -245,6 +245,12 @@ h4 {
 
 
 /* Note  */
+.text h6{
+    color: #5c5b5b;
+}
+.text h4{
+    color: #000;
+}
 
 
 /* Note form */
@@ -267,7 +273,7 @@ h4 {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 2px 3px 4px 2px #edf0f1;
 }
 /* add title  and note in edit form */
 /* add icon for the app  */
@@ -280,30 +286,24 @@ h4 {
 }
 /* edit form have to be changed since it is not supporting the same format */
 input::placeholder {
-    color: red;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: bolder;
-    box-shadow: 2px 3px 4px 2px pink;
-
+    color: #252627;
 }
 
 textarea::placeholder {
-    color: blueviolet;
-    /* height: 500px; */
-    /* background-color: black; */
+    color: #252627;
 }
 
 textarea {
     width: 100%;
     border: none;
+    padding-top: 2px;
+    display: block;
+    outline: none;
 }
 
 input {
     width: 100%;
-    border: black;
-    /* height: 200px; */
-    background-color: black;
+    border: none;
 }
 
 .show {
@@ -323,7 +323,7 @@ input {
     padding: 0px 7px;
     border: none;
     border-radius: 10px;
-    background-color:yellowgreen;
+    background-color: rgb(243, 206, 40);
 }
 
 .submit:hover {
@@ -347,7 +347,7 @@ input {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rebeccapurple;
+    background-color: rgba(129, 127, 127, 0.4);
 }
 
 
