@@ -1,5 +1,7 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: paleturquoise; */
+    /* color: aqua; */
 }
 
 input {
@@ -8,33 +10,40 @@ input {
 
 
 /* Components */
-
+.body{
+    background-color: paleturquoise;
+    color: aqua;
+}
 
 /* ------Header----- */
 
 .header {
+    background-color: blueviolet;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
-    border-bottom: 1px solid #f1f3f4;
+    border-bottom: 5px solid gray;
 }
 
 .brand {
+    background-color: lightgreen;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    box-shadow: 2px 2px 2px 2px #edf1f0;
+    border-radius: 8px;
 }
 
 .brand img,
 i,
 h4 {
-    margin: 0px 5px;
-    color: #606469;
+    margin: 2px 5px;
+    color: black;
 }
 
 .brand h4 {
-    margin: 1px 7px;
+    margin: 2px 7px;
 }
 
 .brand h4:hover {
@@ -52,25 +61,29 @@ h4 {
 }
 
 .user h6 {
+    
     margin: 0px 10px;
     color: #606469;
 }
 
 .search-bar {
+    background-color: lightgreen;
     display: flex;
     justify-content: center;
+    border-radius: 8px;
 }
 
 
 /* ------Search Bar----- */
 
 .search {
-    width: 700px;
+    /* height: 10px; */
+    width: 400px;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 10px;
-    box-shadow: 2px 3px 4px 2px #edf0f1;
+    box-shadow: 2px 2px 2px 2px #edf0f1;
 }
 
 .mobile-search {
@@ -82,28 +95,33 @@ h4 {
 }
 
 .search i {
-    color: #606469;
+    color: black;
 }
 
 .search input {
-    border: none;
-    margin-left: 10px;
+    /* border: none; */
+    /* height: 41px; */
+    margin-left: 8px;
+    background-color: whitesmoke;
 }
 
 .search input::placeholder {
-    color: #606469;
+    color: blueviolet;
+    height: 150px;
 }
 
 
 /* Navbar */
 
 .nav__cont {
+    color: black;
+    background-color: grey;
     position: fixed;
-    width: 40px;
-    top: 50px;
+    width: 60px;
+    top: 70px;
     height: 100vh;
     overflow: hidden;
-    transition: width 0.3s ease;
+    transition: width 0.7s ease;
     cursor: pointer;
 }
 
@@ -113,11 +131,12 @@ h4 {
 
 .nav {
     list-style-type: none;
-    color: white;
+    /* color: blue; */
 }
 
 .nav:first-child {
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
+    /* padding-bottom: 5.3rem */
 }
 
 .nav__items {
@@ -125,33 +144,35 @@ h4 {
     font-family: 'roboto';
     align-items: center;
     justify-content: flex-start;
+    /* color: green; */
 }
 
 .nav__items p {
     position: relative;
-    top: 7px;
-    left: 20px;
-    padding: 0px 20px;
-    transition: all 0.3s ease;
-    color: #606469;
+    top: 8px;
+    left: 19px;
+    padding: 10px 20px;
+    transition: all 0.8s ease;
+    color: whitesmoke;
     font-family: 'roboto';
     border-bottom: none !important;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .nav__items p:after {
     content: '';
-    width: 100%;
-    top: 0;
-    left: 20px;
-    border-radius: 2px;
-    opacity: 0;
-    transition: all 0.5s ease;
-    z-index: -10;
+    /* width: 100%; */
+    /* top: 0; */
+    /* left: 20px; */
+    /* border-radius: 2px; */
+    /* opacity: 200; */
+    /* transition: all 0.5s ease; */
+    /* z-index: -100;  */
+    /* text-decoration: red; */
 }
 
 .nav__items:hover p:after {
-    opacity: 1;
+    opacity: 100;
 }
 
 .nav__items i {
@@ -195,7 +216,7 @@ h4 {
 #note {
     height: fit-content;
     padding: 10px;
-    border: 1px solid #e3e8eb;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -229,54 +250,68 @@ h4 {
 /* Note form */
 
 .note-form-con {
+    /* height: 200px; */
+    /* width: 100%; */
+
     display: flex;
+    margin: 0px 40px ;
     justify-content: center;
     align-items: center;
     padding: 5px;
+    /* background-color: palegoldenrod; */
+    /* color: blue; */
 }
 
 .note-form {
-    opacity: 0.9;
-    width: 60%;
-    padding: 20px;
+    opacity: 1.9;
+    width: 100%;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 2px 3px 4px 2px #edf0f1;
+    box-shadow: 2px 2px 2px 2px black;
 }
-
+/* add title  and note in edit form */
+/* add icon for the app  */
 .edit-note-form {
-    opacity: 0.9;
+    /* opacity: 5.9; */
+    /* height: 600px; */
     width: 60%;
-    padding: 20px;
+    padding: 200px;
     border-radius: 10px;
 }
-
+/* edit form have to be changed since it is not supporting the same format */
 input::placeholder {
-    color: #252627;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 2px 3px 4px 2px pink;
+
 }
 
 textarea::placeholder {
-    color: #252627;
+    color: blueviolet;
+    /* height: 500px; */
+    /* background-color: black; */
 }
 
 textarea {
     width: 100%;
     border: none;
-    padding-top: 2px;
-    display: block;
-    outline: none;
 }
 
 input {
     width: 100%;
-    border: none;
+    border: black;
+    /* height: 200px; */
+    background-color: black;
 }
 
 .show {
     display: block;
-    background-color: #fff;
+    /* background-color: red; */
     border-radius: 10px;
     position: absolute;
-    box-shadow: 2px 3px 4px 2px #dfe4e7;
+    box-shadow: 2px 3px 4px 2px black;
 }
 
 .hide {
@@ -285,10 +320,10 @@ input {
 
 .submit {
     outline: none;
-    padding: 0px 15px;
+    padding: 0px 7px;
     border: none;
     border-radius: 10px;
-    background-color: rgb(243, 206, 40);
+    background-color:yellowgreen;
 }
 
 .submit:hover {
@@ -312,7 +347,7 @@ input {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(129, 127, 127, 0.4);
+    background-color: rebeccapurple;
 }
 
 
@@ -328,7 +363,7 @@ input {
 }
 
 .check input {
-    background: #a1a6ac;
+    background: red;
 }
 
 
@@ -343,21 +378,25 @@ input {
 
 .container h2 {
     font-size: 17px;
-    color: #606469;
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 2px 3px 4px 2px pink;
+    margin: 40px;
 }
 
 .row {
-    padding: 20px 10px;
+    padding: 0px 100px;
 }
 
 .heading-con {
     display: flex;
     justify-content: center;
-    margin: 25px 0px;
+    /* margin: 25px 110px; */
 }
 
 .heading-con h1 {
-    color: #606469;
+    color:blueviolet;
 }
 
 
